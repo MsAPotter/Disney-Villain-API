@@ -1,10 +1,12 @@
 const mongoose = require('../connection')
 
-const SidekickSchema = mongoose.Schema({
+const SidekickSchema = new mongoose.Schema({
     name: String,
     animal: Boolean,
     animaltype: String,
-    powers: String,
+    powers: [{
+      type: String
+    }],
     villainMaster: [{
         type: Schema.Types.ObjectId,
         ref: 'Villain'

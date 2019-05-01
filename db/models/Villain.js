@@ -1,12 +1,19 @@
 const mongoose = require('../connection')
 
-const VillainSchema = mongoose.Schema({
+const VillainSchema = new mongoose.Schema({
     name: String,
-    aliases: String,
-    powers: String,
+    aliases: [{
+      type: String
+    }],
+    powers: [{
+      type: String
+    }],
     accoutrements: String,
     song: String,
-    quotes: { String, String },
+    // quotes: { String, String }, ///  OR LIKE THIS?
+    quotes:[{
+      type: String
+    }],
     movies: [{
         type: Schema.Types.ObjectId,
         ref: 'Movie'

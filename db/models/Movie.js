@@ -1,6 +1,6 @@
 const mongoose = require('../connection')
 
-const MovieSchema = mongoose.Schema({
+const MovieSchema = new mongoose.Schema({
     title: String,
     yearPublished: Number,
     mainVillain: [{

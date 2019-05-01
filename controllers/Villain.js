@@ -16,9 +16,9 @@ router.get("/:name", (req, res) => {
       .then(villain => res.json(villain))
   })
 
-// List all gifs by villain
-router.get("/:name/:gif", (req, res) => {
-    Villain.find({ name: req.params.gif })
+// Find all gifs based on keyword
+router.get("/name/:gif", (req, res) => {
+    Villain.find({ keyword: req.params.gif })
       .then(allgifs => res.json(allgifs))
   })
 

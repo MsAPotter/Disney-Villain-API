@@ -15,3 +15,6 @@ Villain.find({}).deleteMany(() => {
 Sidekick.find({}).deleteMany(() => {
     Sidekick.create(sidekicks)
 })
+Movie.find({}).deleteMany(() => {
+    Movie.create(movies)
+})

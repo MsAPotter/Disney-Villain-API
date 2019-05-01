@@ -1,7 +1,10 @@
 [
     {
     "name": "Maleficent",
-    "aliases": ["The Mistress of All Evil", "Lady Maleficent"],
+    "aliases": [
+      "The Mistress of All Evil", 
+      "Lady Maleficent"
+    ],
     "powers": ["Powerful dark magic",
             "Teleportation via magic",
             "Hypnosis",
