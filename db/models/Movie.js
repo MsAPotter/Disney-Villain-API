@@ -4,7 +4,7 @@ const MovieSchema = new mongoose.Schema({
     title: String,
     yearPublished: Number,
     mainVillain: [{
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Villain'
       }]
 })

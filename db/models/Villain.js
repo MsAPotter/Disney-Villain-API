@@ -15,11 +15,11 @@ const VillainSchema = new mongoose.Schema({
       type: String
     }],
     movies: [{
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Movie'
       }],
     sidekicks: [{
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Sidekick'
       }],
     gifs: [{

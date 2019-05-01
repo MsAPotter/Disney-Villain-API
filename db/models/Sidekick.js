@@ -8,7 +8,7 @@ const SidekickSchema = new mongoose.Schema({
       type: String
     }],
     villainMaster: [{
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Villain'
       }]
 })
