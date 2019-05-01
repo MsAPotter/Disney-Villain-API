@@ -10,30 +10,25 @@ const VillainSchema = new mongoose.Schema({
     }],
     accoutrements: String,
     song: String,
-    // quotes: { String, String }, ///  OR LIKE THIS?
     quotes:[{
       type: String
     }],
     movies: [{
-        type: mongoose.Schema.Types.ObjectId,
+        // type: mongoose.Schema.Types.ObjectId,
+        type: String,
         ref: 'Movie'
       }],
     sidekicks: [{
-        type: mongoose.Schema.Types.ObjectId,
+        // type: mongoose.Schema.Types.ObjectId,
+        type: String,
         ref: 'Sidekick'
       }],
-    gifs: [{
+    gifs: [{     
         url: String,
-        keywords: String
-      },
-      {
-        url: String,
-        keywords: String
-      },
-      {
-        url: String,
-        keywords: String
+        keywords: [{ type: String }]
       }]
+
+ 
 
 })
 

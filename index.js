@@ -1,15 +1,15 @@
 const express = require('express')
 app = express()
 
-// const parser = require('body-parser')
+const parser = require('body-parser')
 
 const VillainController = require('./controllers/Villain')
 const SidekickController = require('./controllers/Sidekick')
 const MovieController = require('./controllers/Movie')
 
 
-// app.use(parser.urlencoded({extended: true}))    
-// app.use(parser.json())  
+app.use(parser.urlencoded({extended: true}))    
+app.use(parser.json())  
 
 
 app.get('/', (req, res) => {
