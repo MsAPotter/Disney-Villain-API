@@ -20,9 +20,9 @@
         "You poor simple fools. Thinking you could defeat me. ME, the Mistress of All Evil!",
          "Now, shall you deal with me, o Prince, and all the powers of Hell!"
     ],
-    "movies": [
-        "Sleeping Beauty"
-      ],
+    "movies": [{
+      "title": "Sleeping Beauty"
+    }],
     "sidekicks": [
         "Diablo"
       ],
@@ -48,7 +48,59 @@
       }
     ]
 
-    }
+    },
+    {
+      "name": "Ursula",
+      "aliases": [
+        "the Sea Witch"
+      ],
+      "powers": ["Powerful dark magic",
+        "Conjurin gmagic spells",
+        "Her enchanted Necklace",
+        "magic potions"],
+      "accoutrements": "a seashell necklace",
+      "song": "Poor Unfortunate Souls",
+      "quotes": [ 
+          "Look at me, wasting away to practically nothing",
+          "You pitiful, insignificant fools!",
+          "King Trition's headstrong, lovesick girl, would make a charming addition to my little garden",
+           "And don't underestimate the improtance of, body language",
+           "keep singing!"
+      ],
+      "movies": [{
+        "title": "The Little Mermaid "
+      }],
+      "sidekicks": [
+          "Flotsam Jetsam"
+        ],
+      "gifs": [{
+          "url": "https://giphy.com/gifs/disney-the-little-mermaid-insult-CSRlrzDb0JX2w",
+          "keywords": ["pathetic"]
+        },
+        {
+          "url": "https://giphy.com/gifs/ursula-DEbDSzf6cBQcM",
+          "keywords": ["undoing","evil laugh","evil"]
+        },
+        {
+          "url": "https://media1.tenor.com/images/7ab17d0d9cda1493f4270ac3478dd47c/tenor.gif?itemid=5180952",
+          "keywords": ["init"]
+        },
+        {
+          "url": "https://i.gifer.com/4xne.gif",
+          "keywords": ["zip"]
+        },
+        {
+          "url": "https://media.tumblr.com/2c28239e6224d21274b2030fdbbefc6a/tumblr_inline_mht0pdb4Jh1qz4rgp.gif",
+          "keywords": ["evil laugh", "crazy eyes"]
+        },
+        {
+          "url": "https://media.giphy.com/media/1zFuyZJMs5cXK/giphy.gif",
+          "keywords": ["body language"]
+        }
+        
+      ]
+  
+      }
 
 
 

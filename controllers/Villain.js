@@ -12,14 +12,15 @@ router.get("/", (req, res) => {
 
 // List a single villain by name
 router.get("/:name", (req, res) => {
-    Villain.find({ name: req.params.name })
+    Villain.find({ "name": req.params.name })
       .then(villain => res.json(villain))
   })
 
 // Find all gifs based on keyword
-router.get("/name/:gif", (req, res) => {
-    Villain.find({ keyword: req.params.gif })
+router.get("/:name/:gifs/:keywords", (req, res) => {
+    Villain.find({ keywords: req.params.gifs.keywords})
       .then(allgifs => res.json(allgifs))
+      // console.log(villainsjson[0].gifs[0].keywords[0]) // get first keyword
   })
 
 

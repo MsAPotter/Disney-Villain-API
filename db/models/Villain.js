@@ -15,8 +15,8 @@ const VillainSchema = new mongoose.Schema({
     }],
     movies: [{
         // type: mongoose.Schema.Types.ObjectId,
-        type: String,
-        ref: 'Movie'
+        title: String,
+        // ref: 'Movie'
       }],
     sidekicks: [{
         // type: mongoose.Schema.Types.ObjectId,
@@ -32,6 +32,6 @@ const VillainSchema = new mongoose.Schema({
 
 })
 
-let villain = mongoose.model('Villain', VillainSchema)
+let Villain = mongoose.model('Villain', VillainSchema)
 
-module.exports = villain
+module.exports = Villain
