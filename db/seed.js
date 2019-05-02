@@ -52,35 +52,3 @@ Movie.find({}).deleteMany(() => {
         // })
 
 
-
-// Villain.deleteMany({}).then(() => {
-//     console.log('deleted all villains')
-//     Sidekick.deleteMany({}).then(() => {
-//       console.log('deleted all sidekicks')
-//       Movie.deleteMany({}).then(() => {
-//         console.log('deleted all movies')
-
-//     Villain.create(villainsjson)
-//     .then(sidekicksjson => {
-//         Sidekick.create({
-//             villainMaster: villain.id
-//         })
-//         .then(side => {
-//             villain.sidekicks.push(side)
-//             villain.save()
-//         })
-//     .then(moviesjson => {
-//         Movie.create({
-//             mainVillain: villain.id
-//         })
-//         .then(side => {
-//             villain.movies.push(side)
-//             villain.save()
-//         })
-//         })
-//     })
-//       })
-//     })
-// })
-
-  

@@ -23,9 +23,9 @@
     "movies": [{
       "title": "Sleeping Beauty"
     }],
-    "sidekicks": [
-        "Diablo"
-      ],
+    "sidekicks": [{
+      "name": "Diablo"
+    }],
     "gifs": [{
         "url": "https://giphy.com/gifs/disney-quote-DvZtz5KXf4zsY",
         "keywords": ["fools","idiots","imberciles","anger"]
@@ -70,9 +70,9 @@
       "movies": [{
         "title": "The Little Mermaid "
       }],
-      "sidekicks": [
-          "Flotsam Jetsam"
-        ],
+      "sidekicks": [{
+          "name": "Flotsam Jetsam"
+      }],
       "gifs": [{
           "url": "https://giphy.com/gifs/disney-the-little-mermaid-insult-CSRlrzDb0JX2w",
           "keywords": ["pathetic"]

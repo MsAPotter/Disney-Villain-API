@@ -3,8 +3,7 @@
         "name": "Diablo",
         "animal": true,
         "animaltype": "crow",
-        "powers": "none",
-        "villainMaster": "Maleficent"
+        "powers": "none"
     }
 
 ]

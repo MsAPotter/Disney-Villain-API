@@ -1,5 +1,7 @@
 const mongoose = require('../connection')
 
+// var ObjectId = mongoose.Schema.Types.ObjectId;
+
 const VillainSchema = new mongoose.Schema({
     name: String,
     aliases: [{
@@ -13,16 +15,16 @@ const VillainSchema = new mongoose.Schema({
     quotes:[{
       type: String
     }],
-    movies: {
-        title: String,
-        // type: mongoose.Schema.Types.ObjectId,
-        // ref: 'Movie'
-      },
-    sidekicks: [{
-        // type: mongoose.Schema.Types.ObjectId,
-        type: String,
-        ref: 'Sidekick'
-      }],
+    movies: [
+      { title: String },
+      { type: mongoose.Schema.Types.ObjectId },
+      { ref: 'Movie' }
+    ],
+    sidekicks: [
+      { name: String },
+      { type: mongoose.Schema.Types.ObjectId }, 
+      { ref: 'Sidekick' }
+    ],
     gifs: [{     
         url: String,
         keywords: [{ type: String }]
