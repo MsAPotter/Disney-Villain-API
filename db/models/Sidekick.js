@@ -7,11 +7,11 @@ const SidekickSchema = new mongoose.Schema({
     powers: [{
       type: String
     }],
-    // villainMaster: [{
-    //     // type: mongoose.Schema.Types.ObjectId,
-    //     type: String,
-    //     ref: 'Villain'
-    //   }]
+    villainMaster: [{
+        // type: mongoose.Schema.Types.ObjectId,
+        type: String,
+        ref: 'Villain'
+      }]
 })
 
 let sidekick = mongoose.model('Sidekick', SidekickSchema)

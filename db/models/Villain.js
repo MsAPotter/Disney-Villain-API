@@ -13,11 +13,11 @@ const VillainSchema = new mongoose.Schema({
     quotes:[{
       type: String
     }],
-    movies: [{
-        // type: mongoose.Schema.Types.ObjectId,
+    movies: {
         title: String,
+        // type: mongoose.Schema.Types.ObjectId,
         // ref: 'Movie'
-      }],
+      },
     sidekicks: [{
         // type: mongoose.Schema.Types.ObjectId,
         type: String,
