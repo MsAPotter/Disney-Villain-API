@@ -20,12 +20,8 @@
         "You poor simple fools. Thinking you could defeat me. ME, the Mistress of All Evil!",
          "Now, shall you deal with me, o Prince, and all the powers of Hell!"
     ],
-    "movies": [{
-      "title": "Sleeping Beauty"
-    }],
-    "sidekicks": [{
-      "name": "Diablo"
-    }],
+    "movies": [],
+    "sidekicks": [],
     "gifs": [{
         "url": "https://giphy.com/gifs/disney-quote-DvZtz5KXf4zsY",
         "keywords": ["fools","idiots","imberciles","anger"]
@@ -67,12 +63,8 @@
            "And don't underestimate the improtance of, body language",
            "keep singing!"
       ],
-      "movies": [{
-        "title": "The Little Mermaid "
-      }],
-      "sidekicks": [{
-          "name": "Flotsam Jetsam"
-      }],
+      "movies": [],
+      "sidekicks": [],
       "gifs": [{
           "url": "https://giphy.com/gifs/disney-the-little-mermaid-insult-CSRlrzDb0JX2w",
           "keywords": ["pathetic"]
@@ -97,10 +89,36 @@
           "url": "https://media.giphy.com/media/1zFuyZJMs5cXK/giphy.gif",
           "keywords": ["body language"]
         }
-        
       ]
   
-      }
+      },
+      {
+        "name": "Scar",
+        "aliases": [
+          "a monkey's uncle", "Uncle Scar", "Ling Scar"
+        ],
+        "powers": ["manipulation"],
+        "accoutrements": "none",
+        "song": "Be Prepared",
+        "quotes": [ 
+            "Long live the king!",
+            "Well, as far as brains go, I got the lion's share, but when it comes to brute strength..... I believe I am at the shallow end of the gene pool...",
+            "I'm surrounded by idiots",
+            "“Oh no, Mufasa. Perhaps you shouldn’t turn your back on me.”"
+        ],
+        "movies": [],
+        "sidekicks": [],
+        "gifs": [{
+            "url": "https://media.giphy.com/media/to3I2nkywr2PS/giphy.gif",
+            "keywords": ["idiots"]
+          },
+          {
+            "url": "http://31.media.tumblr.com/6e38a1704d832d7fd07d4314e5348b93/tumblr_n0vm3xxo8y1trav8xo1_500.gif",
+            "keywords": ["evil grin"]
+          }
+        ]
+    
+        }
 
 
 

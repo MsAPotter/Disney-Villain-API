@@ -4,6 +4,19 @@
         "animal": true,
         "animaltype": "crow",
         "powers": "none"
+    },
+    {
+        "name": "Diablo2",
+        "animal": true,
+        "animaltype": "crow",
+        "powers": "none"
+    },
+    {
+        "name": "Diablo3",
+        "animal": true,
+        "animaltype": "crow",
+        "powers": "none"
     }
+    
 
 ]

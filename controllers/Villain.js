@@ -17,9 +17,11 @@ router.get("/", (req, res) => {
 // })
 
 // Find gif by keyword
-router.get("/:gifs", (req, res) => {
-    Villain.find({ "keywords": req.params.gifs.keywords })
-      .then(villain => res.json(villain))
+router.get("/:searchterms", (req, res) => {
+
+  Villain.find( { $text: { $search: "searchterms" } } )
+
+      .then(google => res.json(google))
   })
 
 // Find all gifs based on keyword

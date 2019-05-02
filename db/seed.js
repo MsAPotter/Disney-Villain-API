@@ -8,47 +8,45 @@ const Villain = require('./models/Villain')
 const Sidekick = require('./models/Sidekick')
 const Movie = require('./models/Movie')
 
+// remove everything
+// then start loop
+// for each item in seedfile
+// create villain
+// create sidekick
+// create movie
+// push movie into villain
+// push sidekick into villain
+// save villain
 
-Villain.find({}).deleteMany(() => {
-    Villain.create(villainsjson)
+Villain.find({}).deleteMany({}).then(() => {
+    console.log('deleted all villains')
+    Sidekick.deleteMany({}).then(() => {
+      console.log('deleted all sidekicks')
+        Movie.deleteMany({}).then(() => {
+            console.log('deleted all movies')
+
+ 
+    Villain.create(villainsjson).then((newVillain) => {
+        console.log(newVillain)
+
+
+        Sidekick.create(sidekicksjson)
+        .then((newSidekick) => {
+            console.log(newSidekick)
+
+            Movie.create(moviesjson)
+                .then((newMovie) => {
+                    for (var i=0; i < villainsjson.length; i++) {
+                    console.log(newMovie)
+                    newVillain[i].movies.push(newMovie[i]._id)
+                    newVillain[i].sidekicks.push(newSidekick[i]._id)
+                    newVillain[i].save()
+                    }
+                })
+        })
+    }) 
+
+
 })
-Sidekick.find({}).deleteMany(() => {
-    Sidekick.create(sidekicksjson)
+    })
 })
-Movie.find({}).deleteMany(() => {
-    Movie.create(moviesjson)
-})
-
-// Villain.deleteMany({}).then(() =>{
-//     console.log('deleted all villains')
-//     Villain.create(villainsjson)
-//         .then(villain => {
-//             // console.log(villainsjson)
-//             console.log(villainsjson[0])    // gets Maleficent populated with full gifs array
-//             console.log(villainsjson[0].gifs[0].url)          // gets first URL
-//             console.log(villainsjson[0].gifs[0].keywords[0]) // get first keyword
-//         })
-//         .then(sidekick => {
-//             Sidekick.create(sidekicksjson)
-//             console.log(sidekicksjson)
-//         })
-        // .then(whatever => {
-        //     console.log(whatever)
-        //     villain.sidekicks.push(whatever)
-        //     villain.save()
-        //     console.log(whatever)
-        // })
-        
-
-            // .then(sidekickname => {
-            //     villainsjson.sidekicksjson.push(sidekickname)
-            //     villainsjson.save()
-            //     console.log("associated Sidekick with Villain")
-            // })
-        //     .catch(err => {
-        //         console.log(err)
-        //     })
-
-        // })
-
-

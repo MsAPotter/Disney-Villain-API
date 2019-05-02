@@ -5,7 +5,10 @@ const Movie = require("../db/models/Movie")
 const Villain = require("../db/models/Villain")
 
 
-
+// List all movies
+router.get("/", (req, res) => {
+    Movie.find({}).then(allmovies => res.json(allmovies))
+  })
 
 
 

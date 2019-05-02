@@ -11,6 +11,13 @@ router.get("/", (req, res) => {
     Sidekick.find({}).then(allsidekicks => res.json(allsidekicks))
   })
 
+//  Get sidekick by ID
+router.get("/:id", (req, res) => {
+  Sidekick.find({ id: req.params._id })
+    .then(sidekick => res.json(sidekick))
+})
+  
+
 
 
 

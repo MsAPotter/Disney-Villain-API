@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
 
 
 app.use('/villains/', VillainController)
-app.use('/sidekick/', SidekickController)
-app.use('/movie/', MovieController)
+app.use('/sidekicks/', SidekickController)
+app.use('/movies/', MovieController)
 
 app.listen(5000, () => {
     console.log("listening on port 5000")
