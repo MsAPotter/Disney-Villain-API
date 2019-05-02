@@ -4,13 +4,21 @@
     "yearPublished": 1959
     },
     {
-        "title": "Sleeping Beauty2",
-        "yearPublished": 1959
-        },
-        {
-            "title": "Sleeping Beauty3",
-            "yearPublished": 1959
-            }
+    "title": "The Little Mermaid",
+    "yearPublished": 1989
+    },
+    {
+    "title": "The Lion King",
+    "yearPublished": 1994
+    },
+    {
+    "title": "Aladdin",
+    "yearPublished": 1992
+    },
+    {
+    "title": "Hercules",
+    "yearPublished": 1997
+    }
 
 
 ]

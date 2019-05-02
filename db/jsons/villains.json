@@ -118,7 +118,72 @@
           }
         ]
     
-        }
+        },
+        {
+          "name": "Jafar",
+          "aliases": [
+            "Sorcerer Jafar", "the Royal Vizier"
+          ],
+          "powers": ["alchemy", "magician tricks"],
+          "accoutrements": "cobra headed staff",
+          "song": "none",
+          "quotes": [ 
+              "I think it's time to say 'good-bye' to Prince Abubu...",
+              "A snake, am I? Perhaps you'd like to see how s-ss-s-snake-like I can be!"
+          ],
+          "movies": [],
+          "sidekicks": [],
+          "gifs": [{
+              "url": "https://media1.giphy.com/media/vW34BCixcpqhy/giphy.gif",
+              "keywords": ["evil", "evil laugh"]
+            },
+            {
+              "url": "https://media1.giphy.com/media/XheLbKJXQ43oA/giphy.gif",
+              "keywords": ["ecstatic","sarcasm"]
+            }
+          ]
+      
+          },
+          {
+            "name": "Hades",
+            "aliases": [
+              "Lord of the Dead", "God of the Underworld"
+            ],
+            "powers": ["immortality", "teleportation", "magic", "Pyrokinesis", "conjuring"],
+            "accoutrements": "none",
+            "song": "none",
+            "quotes": [ 
+                "Memo to me. Memo to me. Maim you after my meeting",
+                "Game, set, match",
+                "I got 24 hours to get rid of this bozo, or the entire scheme I've been setting up for 18 years goes up in smoke...and you... are wearing...HIS MERCHANDISE!?!?!",
+                "uh guys. Olympus would be that way"
+            ],
+            "movies": [],
+            "sidekicks": [],
+            "gifs": [{
+                "url": "hhttps://media2.giphy.com/media/mWNPTJ1zx6Aj5a7CVx/giphy.gif",
+                "keywords": ["huh"]
+              },
+              {
+                "url": "https://media0.giphy.com/media/cqudCA6rrPo9W/giphy.gif",
+                "keywords": ["what","anger", "yell"]
+              },
+              {
+                "url": "https://media3.giphy.com/media/ZMJQEhBskQmQM/giphy.gif",
+                "keywords": ["anger","hatred", "seething"]
+              },
+              {
+                "url": "https://i.imgur.com/Jmf03eh.gif",
+                "keywords": ["game set match"]
+              },
+              {
+                "url": "https://data.whicdn.com/images/275372960/original.gif",
+                "keywords": ["it's fine", "i'm cool", "cool"]
+              }
+              
+            ]
+        
+            }
 
 
 

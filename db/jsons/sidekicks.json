@@ -6,16 +6,28 @@
         "powers": "none"
     },
     {
-        "name": "Diablo2",
+        "name": "Flotsam & Jetsam",
         "animal": true,
-        "animaltype": "crow",
+        "animaltype": "eel",
         "powers": "none"
     },
     {
-        "name": "Diablo3",
+        "name": "none",
+        "animal": false,
+        "animaltype": "n/a",
+        "powers": "n/a"
+    },
+    {
+        "name": "Iago",
         "animal": true,
-        "animaltype": "crow",
+        "animaltype": "bird",
         "powers": "none"
+    },
+    {
+        "name": "Pain & Panic",
+        "animal": false,
+        "animaltype": "none",
+        "powers": "shapeshifting"
     }
     
 
