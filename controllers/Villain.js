@@ -17,15 +17,18 @@ router.get("/:name", (req, res) => {
 })
 
 
+// Find a villain's quotes array
+router.get("/:name/quotes", (req, res) => {
+  Villain.findOne({ name: req.params.name })
+    .then(villain => res.json(villain.quotes))
+})
 
-////////////////////////////////////// ATTEMPT TO FIND QUOTES
 
-// Find a villain's quotes
-// router.get("/quotes/:name", (req, res) => {
-//   Villain.find({ quotes: req.params.name }, 'quotes')
-//     .then(searchterms => res.json(searchterms))
-// })
-
+// Find a villain's first url (for gif)
+router.get("/:name/url", (req, res) => {
+  Villain.findOne({ name: req.params.name })
+    .then(villain => res.json(villain.gifs[0].url))
+})
 
 
 ////////////////////////////////////// ATTEMPT TO FIND BY KEYWORD
@@ -71,7 +74,7 @@ router.put('/:id', (req,res) => {
 })
 
 // Delete
-router.delete("/", (req, res) => {
+router.delete("/delete/:id", (req, res) => {
   Villain.deleteOne({_id: req.params.id})
   .then(deleted => {
       console.log(deleted)

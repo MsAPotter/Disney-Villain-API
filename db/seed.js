@@ -8,17 +8,9 @@ const Villain = require('./models/Villain')
 const Sidekick = require('./models/Sidekick')
 const Movie = require('./models/Movie')
 
-// remove everything
-// then start loop
-// for each item in seedfile
-// create villain
-// create sidekick
-// create movie
-// push movie into villain
-// push sidekick into villain
-// save villain
 
-Villain.find({}).deleteMany({}).then(() => {
+
+Villain.find({}).deleteMany({}).then(() => {        // remove everything
     console.log('deleted all villains')
     Sidekick.deleteMany({}).then(() => {
       console.log('deleted all sidekicks')
@@ -26,21 +18,21 @@ Villain.find({}).deleteMany({}).then(() => {
             console.log('deleted all movies')
 
  
-    Villain.create(villainsjson).then((newVillain) => {
+    Villain.create(villainsjson).then((newVillain) => {     // create villain
         console.log(newVillain)
 
 
-        Sidekick.create(sidekicksjson)
+        Sidekick.create(sidekicksjson)                     // create sidekick
         .then((newSidekick) => {
             console.log(newSidekick)
 
-            Movie.create(moviesjson)
+            Movie.create(moviesjson)                        // create movie
                 .then((newMovie) => {
                     for (var i=0; i < villainsjson.length; i++) {
                     console.log(newMovie)
-                    newVillain[i].movies.push(newMovie[i]._id)
-                    newVillain[i].sidekicks.push(newSidekick[i]._id)
-                    newVillain[i].save()
+                    newVillain[i].movies.push(newMovie[i]._id)          // push movie into villain
+                    newVillain[i].sidekicks.push(newSidekick[i]._id)    // push sidekick into villain
+                    newVillain[i].save()                                // save villain
                     }
                 })
         })
