@@ -17,10 +17,14 @@ router.get("/:name", (req, res) => {
 })
 
 
-// Find a villain's quotes array
+// Return a random quote from a specific Villain
 router.get("/:name/quotes", (req, res) => {
+  
   Villain.findOne({ name: req.params.name })
-    .then(villain => res.json(villain.quotes))
+    .then((villain) => {
+      var x = Math.floor(Math.random() * villain.quotes.length)
+      res.json(villain.quotes[x])
+    })
 })
 
 
@@ -30,30 +34,6 @@ router.get("/:name/url", (req, res) => {
     .then(villain => res.json(villain.gifs[0].url))
 })
 
-
-////////////////////////////////////// ATTEMPT TO FIND BY KEYWORD
-
-// Find all gifs based on keyword
-// router.get("/:name/:gifs/:keywords", (req, res) => {
-//     Villain.find({ keywords: req.params.gifs.keywords})
-//       .then(allgifs => res.json(allgifs))
-//       // console.log(villainsjson[0].gifs[0].keywords[0]) // get first keyword
-//   })
-
-// villainsjson[0].gifs[0].keywords[0]
-
-//////////////////////////////////////
-//////////////////////////////////////  ATTEMPT TO USE $FIND IN MONGGOSE TO SEARCH BY KEYWORD
-////////////////////////////////////// 
-
-// router.get("/:searchterms", (req, res) => {
-
-//   Villain.find( { $text: { $search: "searchterms" } } )
-
-//       .then(google => res.json(google))
-//   })
-//////////////////////////////////////
-//////////////////////////////////////
 
 
 //Create a villain
