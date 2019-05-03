@@ -21,6 +21,8 @@ app.use('/villains/', VillainController)
 app.use('/sidekicks/', SidekickController)
 app.use('/movies/', MovieController)
 
-app.listen(5000, () => {
-    console.log("listening on port 5000")
-})
+app.set("port", process.env.PORT || 3001)
+
+app.listen(app.get("port"), () => {
+    console.log(`✅ PORT: ${app.get("port")} 🌟`)
+  })
