@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
   })
 
 // List a single villain by name
-router.get("/:name", (req, res) => {
+router.get("/:name", (req, res) => {    // ==> localhost:5000/villains/
   Villain.find({ "name": req.params.name })
     .then(villain => res.json(villain))
 })
@@ -46,7 +46,7 @@ router.post("/", (req, res) => {
 })
 
 // Update
-router.put('/:id', (req,res) => {
+router.put('/update/:id', (req,res) => {
   Villain.findOneAndUpdate({_id: req.params.id}, req.body)  
   .then(updated => {
       res.json(updated)
