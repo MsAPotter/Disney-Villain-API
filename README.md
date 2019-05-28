@@ -19,14 +19,14 @@ Body-Parser
 
 ## Approach
 
-Created 3 JSON files: one for the Villain with emoty arrays for the sidekicks and movies key values, one JSON file for the sidekicks and one for the movies the Villain is associated with.
+Created 3 JSON files: one for the Villain with empty arrays for the sidekicks and movies key values, one JSON file for the sidekicks and one for the movies the Villain is associated with.
 
 In the Villain model, the sidekicks and movies are Referenced, so that that information is added during the seeding process.
 
 
 ## Features
 
-Returns a random quote from a specific Villain,, specified by the User
+Returns a random quote from a specific Villain, specified by the User
 
 ## Limitations
 
